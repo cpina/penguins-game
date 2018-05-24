@@ -5,8 +5,9 @@ import positions
 import utils
 
 """
-Atemps to solve the puzzle with random positions. It doesn't finish in minutes.
+Attempts to solve the puzzle with random positions. It doesn't finish in minutes.
 """
+
 
 def resolve(penguin_positions):
     solved = False
@@ -19,6 +20,9 @@ def resolve(penguin_positions):
         if utils.check_solution(possible_solution, penguin_positions):
             print("SOLUTION FOUND:", possible_solution)
             solved = True
+
+        if combination_counter % 100000 == 0:
+            print("Tested:", combination_counter)
 
     print("combination counter:", combination_counter)
 

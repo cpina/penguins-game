@@ -160,7 +160,7 @@ R = [
 ]
 
 all = [L, C, Z, R]
-print("L:",len(L))
-print("C:",len(C))
-print("Z:",len(Z))
-print("R:",len(R))
+print("L:", len(L))
+print("C:", len(C))
+print("Z:", len(Z))
+print("R:", len(R))
