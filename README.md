@@ -13,13 +13,19 @@ See the booklet/ for the scans of the challenges.
 The aim of the game is to have some penguins in a board (pre-set positions, following one of the challenges in the booklet) and then put the ice around the penguins.
 
 See for example:
-
+![Instructions](booklet/instructions-0002.jpg)
+![Starter challenges](booklet/instructions-0003.jpg)
+![Master challenges](booklet/instructions-0011.jpg)
 
 
 
 # Where to start
 ## From scratch
-Look at the pieces (buy the game or see ). Start coding as you wish.
+Read the game rules: buy the game or see scanned instructions (pay attention at figure 3 with the shape of the figures for your own representation of the possible pieces):
+
+![Instructions](booklet/instructions-0002.jpg)
+
+(I would find it quite hard to generate the possible positions of the pieces without the physical game)
 
 
 ## Use positions.py and public_utils.py
