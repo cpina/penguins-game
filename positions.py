@@ -164,3 +164,11 @@ print("L:", len(L))
 print("C:", len(C))
 print("Z:", len(Z))
 print("R:", len(R))
+
+all_dictionary = {'L': L,
+                  'C': C,
+                  'Z': Z,
+                  'R': R
+                  }
+
+board_size = (5,4)
