@@ -205,4 +205,4 @@ all_dictionary = {'L': L,
                   'R': R
                   }
 
-board_size = (5,4)
+board_size = (5, 4)

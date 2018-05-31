@@ -1,8 +1,12 @@
 import src.utils.positions as positions
 
 
-# L, C, Z, R
 def text_for_position(col, row, solution, penguins):
+    """
+    Given col and row and the solution returns a letter for the piece,
+    P for penguins and " " for possible blank squares (some challenges
+    have 2 or 3 penguins instead of 4)
+    """
     allocated_piece = None
 
     position = (col, row)
@@ -26,6 +30,9 @@ def text_for_position(col, row, solution, penguins):
 
 
 def print_solution(solution, penguins):
+    """
+    Prints the solution. A different letter for each piece type and P for penguins.
+    """
     row = 0
     while row < positions.board_size[1]:
         col = 0
@@ -39,20 +46,6 @@ def print_solution(solution, penguins):
 
         row += 1
 
-
-def print_solution(solution, penguins):
-    row = 0
-    while row < positions.board_size[1]:
-        col = 0
-        text_row = "   {}     {}".format(text_for_position(col+1, row, solution, penguins),
-                                    text_for_position(col+3, row, solution, penguins))
-        print(text_row)
-        text_row = "{}     {}     {}".format(text_for_position(col, row, solution, penguins),
-                                        text_for_position(col+2, row, solution, penguins),
-                                        text_for_position(col+4, row, solution, penguins))
-        print(text_row)
-
-        row += 1
 
 if __name__ == "__main__":
     print_solution([], [(1,1), (2,0), (2,3), (3,1)])
