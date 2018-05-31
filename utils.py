@@ -1,5 +1,6 @@
 import positions
 
+
 def check_solution(possible_solution, penguin_positions):
     occupied_positions = penguin_positions[:]
 

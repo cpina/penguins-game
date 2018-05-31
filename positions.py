@@ -1,3 +1,41 @@
+# See README.md to understand the game.
+#
+# The first challenge that we found was to know
+# which possible positions the pieces could be put
+# in the board.
+#
+# Given that the board is quite small and the pieces
+# quite irregular we opted for listing all the positions
+# that the pieces could be in.
+#
+# Feel free to not use this and generate them programatically!
+#
+# There are 4 pieces named L, C, Z and R
+# (based on the "shape" of the pieces).
+# The board is not a square board: it has a bit of an
+# irregular shape. This made things a bit more difficult.
+
+# See the image:
+# The penguins are in this positions (following the same
+# position-scheme as the pieces here):
+#
+# [(0,0), (1,2), (2,3), (3,1)]
+# So, the format is: (column, row), zero-indexed, count the number
+# of empty ice-blocks from the top-left to the position.
+#
+# In the same ...
+# The piece is in the position: [(0, 1), (0, 2), (1, 1), (2, 1)]
+# A representation of the board using public_utils.print_solution:
+#
+#    Z     Z
+# P     Z     Z
+#    C     P
+# C     C     R
+#    P     R
+# C     L     R
+#    L     L
+# L     P     R
+
 L = [
     [(0,0), (0,1), (0,2), (1,0)],
     [(0,1), (0,2), (0,3), (1,1)],
@@ -160,10 +198,6 @@ R = [
 ]
 
 all = [L, C, Z, R]
-print("L:", len(L))
-print("C:", len(C))
-print("Z:", len(Z))
-print("R:", len(R))
 
 all_dictionary = {'L': L,
                   'C': C,
