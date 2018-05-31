@@ -1,8 +1,15 @@
 
 import itertools
-import positions
+import src.utils.positions as positions
+import src.utils.utils as utils
+import src.solutions.solutions_utils as solutions_utils
 
-import utils
+"""
+Tries all the possible combinations: a pure product of all the possible pieces-positions.
+
+Easy to implement, it takes a few seconds in a normal computer.
+"""
+
 
 def resolve(penguin_positions):
     solution_counter = 0
@@ -10,7 +17,7 @@ def resolve(penguin_positions):
     solution = None
     for possible_solution in itertools.product(*positions.all):
         combination_counter += 1
-        if utils.check_solution(possible_solution, penguin_positions):
+        if solutions_utils.check_solution(possible_solution, penguin_positions):
             print("SOLUTION FOUND:", possible_solution)
             solution_counter += 1
             solution = possible_solution

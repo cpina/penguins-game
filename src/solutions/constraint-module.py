@@ -1,6 +1,9 @@
 import constraint
-import positions
-import utils
+
+import src.utils.positions as positions
+import src.solutions.solutions_utils as solution_utils
+import src.utils.utils as utils
+
 
 def resolve(penguin_positions):
     problem = constraint.Problem(constraint.RecursiveBacktrackingSolver())
@@ -9,11 +12,14 @@ def resolve(penguin_positions):
     problem.addVariable("Z", positions.Z)
     problem.addVariable("R", positions.R)
 
-    problem.addConstraint(lambda L,C,Z,R: utils.check_solution([L,C,Z,R], penguin_positions))
+    problem.addConstraint(lambda L,C,Z,R: solution_utils.check_solution([L,C,Z,R], penguin_positions))
 
     solutions = problem.getSolution()
 
     print(solutions)
+
+    # TODO: convert this solution format to the usual solutions
+    utils.print_solution(solutions)
 
 if __name__ == "__main__":
     #penguin_positions = []

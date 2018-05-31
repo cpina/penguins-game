@@ -1,8 +1,7 @@
 
 import random
-import positions
-
-import utils
+import src.utils.positions as positions
+import src.solutions.solutions_utils as solution_utils
 
 """
 Attempts to solve the puzzle with random positions. It doesn't finish in minutes.
@@ -17,7 +16,7 @@ def resolve(penguin_positions):
         possible_solution = random.choice(positions.L) + random.choice(positions.C) + random.choice(positions.Z) + random.choice(positions.R)
         combination_counter += 1
 
-        if utils.check_solution(possible_solution, penguin_positions):
+        if solution_utils.check_solution(possible_solution, penguin_positions):
             print("SOLUTION FOUND:", possible_solution)
             solved = True
 
