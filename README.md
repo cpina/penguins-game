@@ -39,3 +39,8 @@ Read the documentation in public.py and public_utils.py to understand how to use
 In the repository there are already done implementations - check them and improve them, benchmark, play with them, etc.
 
 The problem of the implemented solutions is that they work using "brute force". They are faster than a human but not smarter or as smart as a human. A possible implementation would be to mimic a human player: to not try stupid combinations. E.g. if a board has 4 penguins there aren't going to be any empty spaces: do leave empty spaces. Or do not try invalid combinations as some solutions are doing (not cutting the search tree).
+
+# Ideas
+* Recognise the initial position of the penguins using an image recognition library (e.g. OpenCV Python). E.g. have a photo taken of the board and find the position of the penguins and then resolve this setup
+* A player that plays more like a human player
+* ...
