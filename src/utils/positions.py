@@ -6,7 +6,7 @@
 #
 # Given that the board is quite small and the pieces
 # quite irregular we opted for listing all the positions
-# that the pieces could be in.
+# in which the pieces could fit.
 #
 # Feel free to not use this and generate them programatically!
 #
@@ -15,17 +15,20 @@
 # The board is not a square board: it has a bit of an
 # irregular shape. This made things a bit more difficult.
 
-# See the image:
-# The penguins are in this positions (following the same
-# position-scheme as the pieces here):
+# To denote positions we use the following system: 
+# The format is (column, row), zero-indexed, count the number
+# of empty ice-blocks from the top-left to the position.
+
+# See the image below:
+# The penguins (represented by the letter P) are in their set positions:
 #
 # [(0,0), (1,2), (2,3), (3,1)]
-# So, the format is: (column, row), zero-indexed, count the number
-# of empty ice-blocks from the top-left to the position.
+
+# which use the method above to denote their positions.
 #
-# In the same ...
-# The piece is in the position: [(0, 1), (0, 2), (1, 1), (2, 1)]
-# A representation of the board using public_utils.print_solution:
+# In the same image we can see the ice blocks: 
+# The piece C, for example, is in the position: [(0, 1), (0, 2), (1, 1), (2, 1)]
+# This image is a representation of the board, created using public_utils.print_solution:
 #
 #    Z     Z
 # P     Z     Z
@@ -36,6 +39,7 @@
 #    L     L
 # L     P     R
 
+# Below are the manual positions of each of the possible positions of the ice blocks. 
 L = [
     [(0,0), (0,1), (0,2), (1,0)],
     [(0,1), (0,2), (0,3), (1,1)],
