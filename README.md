@@ -42,5 +42,6 @@ The problem of the implemented solutions is that they work using "brute force". 
 
 # Ideas
 * Recognise the initial position of the penguins using an image recognition library (e.g. OpenCV Python). E.g. have a photo taken of the board and find the position of the penguins and then resolve this setup
-* A player that plays more like a human player
+* A player that plays more like a human player (instead of trying all the combinations)
+* Find all the possible penguin-positions that can be a game (for one, two, three or four penguins)
 * ...
