@@ -1,5 +1,11 @@
 
 import random
+
+import sys
+import os
+sys.path.append((os.path.join(sys.path[0], "../..")))
+sys.path.append("../../..")
+
 import src.utils.positions as positions
 import src.solutions.solutions_utils as solution_utils
 
